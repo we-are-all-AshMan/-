@@ -35,7 +35,7 @@ export async function updateState(identity){
             openId:identity.openId,
         },
     });
-    console.log(req.data);
+    //console.log(req.data);
     return req.data;
 }
 

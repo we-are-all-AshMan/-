@@ -112,7 +112,7 @@ export default {
 
     //按钮
     handleEdit(index, row) {
-      console.log(index, row);
+      //console.log(index, row);
     },
 //更新state
 async updateSSCState(openId){

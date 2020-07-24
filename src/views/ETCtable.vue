@@ -131,7 +131,7 @@ this.gettableData();
     //调用
     async gettableData() {
       var res = await etc.getAllEtc();
-     console.log(res);
+     //console.log(res);
       var t = res.data;
       var i = 0;
       for (i = 0; i < t.length; i++) {       

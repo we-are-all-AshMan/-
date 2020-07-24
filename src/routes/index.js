@@ -13,10 +13,10 @@ const originalPush = VueRouter.prototype.push
 router.beforeEach((to, from, next) => {
    if (to.path === '/') {
       next();
-      console.log(next)
+      //console.log(next)
    } else {// 每次页面跳转执行，token或openId錯誤，均提示跳转到首页
       let userName = sessionStorage.getItem('userName');
-      console.log(userName)
+      //console.log(userName)
       if (userName === null || userName === '' || userName === undefined) {
          Toast('userName错误，请重新登录')
          setTimeout(function () {

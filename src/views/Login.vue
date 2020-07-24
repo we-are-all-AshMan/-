@@ -181,26 +181,26 @@ export default {
         return;
       }
       if (this.code == this.inputCode && this.code != "") {
-        console.log(this.userName + this.password);
+        //console.log(this.userName + this.password);
         var res = await sendLogin({
           userName: this.userName,
           password: this.password,
         });
         var req = res.data;
         if (req.code == "203") {
-          console.log("登录成功");
+          //console.log("登录成功");
           //跳转主页
-
+        //设置登录session
         sessionStorage.setItem("userName",this.userName);
 
           this.$router.push("/home");
         } else if (req.code == "202") {
           this.error = "账号或密码错误";
-          console.log(this.error);
+          //console.log(this.error);
         } else {
-          console.log(req.code);
+          //console.log(req.code);
           this.error = "服务器无响应";
-          console.log(this.error);
+          //console.log(this.error);
         }
       } else {
         this.error = "验证码错误";
@@ -208,7 +208,7 @@ export default {
     },
     autoStart() {
       this.timer = setInterval(() => {
-        console.log(this.timer);
+        //console.log(this.timer);
         if (this.time == 0) {
           this.autoStop();
           this.isClick = false;
@@ -219,7 +219,7 @@ export default {
     },
     autoStop() {
       clearInterval(this.timer);
-      console.log(this.timer);
+      //console.log(this.timer);
       this.timer = null;
       this.time = 60;
     },
@@ -229,21 +229,21 @@ export default {
     async codeClicked() {
       if (this.phoneNumber.length != 11) {
         this.error = "手机号有误";
-        console.log(this.error);
+        //console.log(this.error);
       } else if (this.userName == "" || this.password == "") {
         this.error = "请输入账号或密码";
-        console.log(this.error);
+        //console.log(this.error);
       } else {
         //按钮禁用
         this.isClick = true;
         this.autoStart();
         var res = await sendCode(this.phoneNumber);
-        console.log(res);
+        //console.log(res);
         if (res.code == "299") {
           this.code = res.data;
         } else {
           this.error = "发送验证码失败,请检查手机号是否正确";
-          console.log(this.error);
+          //console.log(this.error);
         }
       }
     },

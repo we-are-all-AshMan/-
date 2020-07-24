@@ -24,7 +24,7 @@ summary  正文摘要                TEXT,
         <el-button @click="refreshtheDescGlobal()" size="mini" type="warning">全球数据</el-button>
       </el-button-group>
     </div>
-  
+    
     <el-table ref="filterTable" :data="tableData" height="100%" border
     width="100%"
      :default-sort = "{prop: 'date', order: 'descending'}">
@@ -132,21 +132,73 @@ async refreshtheNews()
 {
     var ress=await news.refreshNews();
     this.getnews();
+    //console.log(ress);
+    if(ress.code==256){
+      alert("当前新闻已是最新");
+    }
+    else if(ress.code==255){
+      alert("成功更新新闻")
+    }
+    else if(ress.code==222){
+      alert("今日首次刷新新闻，注意核查哦~");
+    }
+    else{
+      alert("刷新新闻失败!")
+    }
 },
 async refreshtheDescNation()
 {
     var ress=await news.refreshDescNation();
-      console.log('朱雨涵渣男');
+    //console.log(ress);
+    
+    if(ress.code==266){
+      alert("当前国内疫情数据已是最新");
+    }
+    else if(ress.code==256){
+      alert("成功更新国内疫情数据")
+    }
+    else if(ress.code==223){
+      alert("今日首次刷新国内疫情数据，注意核查哦~");
+    }
+    else{
+      alert("刷新国内疫情数据失败!")
+    }
 },
 async refreshtheDescForeign()
 {
     var ress=await news.refreshDescForeign();
     // this.getnews();
+    //console.log(ress);
+    if(ress.code==267){
+      alert("当前境外疫情数据已是最新");
+    }
+    else if(ress.code==257){
+      alert("成功更新境外疫情数据")
+    }
+    else if(ress.code==224){
+      alert("今日首次刷新境外疫情数据，注意核查哦~");
+    }
+    else{
+      alert("刷新境外疫情数据失败!")
+    }
 },
-async refreshtheDDescForeign()
+async refreshtheDescGlobal()
 {
     var ress=await news.refreshDescGlobal();
+    //console.log(ress);
     // this.getnews();
+    if(ress.code==268){
+      alert("当前全球疫情数据已是最新");
+    }
+    else if(ress.code==258){
+      alert("成功更新全球疫情数据")
+    }
+    else if(ress.code==225){
+      alert("今日首次刷新全球疫情数据，注意核查哦~");
+    }
+    else{
+      alert("刷新全球疫情数据失败!")
+    }
 },
 
 async deletethenews(id){
@@ -156,7 +208,7 @@ async deletethenews(id){
 async getnews(){
   
     var res=await news.getAllNews();
-    console.log(res);
+    //console.log(res);
 this.tableData=res.data;
     },
     filterTag(value, row) {
