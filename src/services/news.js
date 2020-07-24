@@ -1,15 +1,11 @@
 /*
- * @Author: zouwenye 
- * @Date: 2020-07-24 17:04:45 
- * @Last Modified by:   zouwenye 
- * @Last Modified time: 2020-07-24 17:04:45 
+ * @Author: zouwenye&amp;zhuyuhan 
+ * @Date: 2020-07-24 17:31:55 
+ * @Last Modified by:   zouwenye&amp;zhuyuhan 
+ * @Last Modified time: 2020-07-24 17:31:55 
  */
-/*
- * @Author: Zhuyuhan 
- * @Date: 2020-07-22 11:39:23 
- * @Last Modified by:   Zhuyuhan 
- * @Last Modified time: 2020-07-22 11:39:23 
- */
+
+
 import axios from 'axios'
 
 
