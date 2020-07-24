@@ -5,7 +5,7 @@
         <div class="logo">
           <!-- 声明式导航 -->
           <router-link :to="{ name: 'Home' }">
-            <img src="../assets/logo20.png" alt="" style="width:105px;height:48px" />
+            <img src="../assets/logo20.png" alt="" style="width:130px;height:60px" />
           </router-link>
         </div>
         <!-- <div class="nav"> -->

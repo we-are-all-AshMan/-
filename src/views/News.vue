@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <Sidebar />
     <Header />
 
@@ -88,6 +88,7 @@ summary  正文摘要                TEXT,
   width: 200px;
   /* display: flex; */
 }
+
 .el-table {
   position: fixed;
   left: 120px;

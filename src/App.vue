@@ -3,7 +3,7 @@
 
   
   <div class="container">
-      <!-- 该组件会根据不同的访问路径，渲染不同的组件 -->
+  
       <router-view></router-view>
    
    
@@ -37,7 +37,10 @@
   height: 100%;
 }
 .container{
-  margin: 30px auto;
-  
+  /* margin: 30px auto; */
+   height:100%;
+ width:100%;
+  margin: 0;
+            padding: 0;
 }
 </style>

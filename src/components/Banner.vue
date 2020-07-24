@@ -1,8 +1,11 @@
 <template>
 <div class="banner-container">
-     <el-carousel :interval="4000" type="card" height="200px">
+     <el-carousel :interval="3000" type="card" height="320px">
+   
     <el-carousel-item v-for="item in box" :key="item.id">
-    <img class="medium" :src="item.url"><img>
+    
+    <img width=auto height=100% Class="medium" :src="item.url"><img>
+
     </el-carousel-item>
   </el-carousel>
   <!-- <el-carousel indicator-position="outside">
@@ -24,9 +27,6 @@ data(){
  },
 { url: require("../assets/banner/banner3.jpeg")
  },
-{ url: require("../assets/banner/banner1.jpeg")
- }
-
         ]
     }
 }

@@ -108,12 +108,7 @@
 </script>
 
 <style >
-   .el-scrollbar{
-      height: 200%;
-   }
-  .el-scrollbar__wrap { 
-        overflow-x: hidden;
-      } 
+  
 #sidebar{
 margin-left: 0px;
 margin-top:  0px;
