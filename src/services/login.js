@@ -1,9 +1,4 @@
-/*
- * @Author: Zhuyuhan 
- * @Date: 2020-07-22 11:39:30 
- * @Last Modified by:   Zhuyuhan 
- * @Last Modified time: 2020-07-22 11:39:30 
- */
+
 import axios from 'axios';
 /**
  * 发送验证码，参数为电话号码
