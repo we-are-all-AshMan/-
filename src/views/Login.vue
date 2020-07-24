@@ -7,7 +7,7 @@
       <font style="position: absolute; 
   top:18px;left:75px;color:rgb(32,127,207)"
   
-  >欢迎登陆AIGOV指尖政务管理平台！</font>
+  >欢迎登录AIGOV指尖政务管理平台！</font>
       <!-- <div class="form-item" style="center"> -->
      
       <div class="input">
@@ -133,7 +133,15 @@
         ></el-alert>
       </div>
     </form>
+
+ <div style=" position: relative;
+            top: 93%; ">
+  <a href="http://www.beian.miit.gov.cn" target="_blank">蜀ICP备20022624</a>
   </div>
+
+
+  </div>
+ 
 </template>
 
 <script>
@@ -244,6 +252,15 @@ export default {
 </script>
 
 <style>
+a{
+
+font-size:12px;
+
+color:rgb(0, 179, 255); 
+
+text-decoration: none;  
+
+}
 .login-container {
   margin: auto;
   height: 290px;
