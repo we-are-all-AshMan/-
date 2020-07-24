@@ -1,3 +1,10 @@
+/*
+ * @Author: zouwenye 
+ * @Date: 2020-07-24 17:22:14 
+ * @Last Modified by:   zouwenye 
+ * @Last Modified time: 2020-07-24 17:22:14 
+ */
+
 <template>
   <div class="header">
     <!-- <div class="header-container">
@@ -5,7 +12,7 @@
         <div class="logo">
           <!-- 声明式导航 -->
           <router-link :to="{ name: 'Home' }">
-            <img src="../assets/logo20.png" alt="" style="width:130px;height:60px" />
+            <img src="../assets/logo20.png" alt="" style="width:130px;height:55px" />
           </router-link>
         </div>
         <!-- <div class="nav"> -->
@@ -87,7 +94,7 @@ export default{
 .logo {
 
     margin-left: 60px;
-    padding-top: 12px;
+    padding-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;

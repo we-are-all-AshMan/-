@@ -1,3 +1,10 @@
+/*
+ * @Author: zouwenye&amp;zhuyuhan 
+ * @Date: 2020-07-24 17:32:16 
+ * @Last Modified by:   zouwenye&amp;zhuyuhan 
+ * @Last Modified time: 2020-07-24 17:32:16 
+ */
+
 <template>
   <div class="div-top">
     <h1 style="position:fixed;left:60px;top:-20px;color:dark ; font-size:60px;white-space:nowrap">AIGOV</h1>

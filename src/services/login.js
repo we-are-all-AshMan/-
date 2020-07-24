@@ -1,9 +1,10 @@
 /*
- * @Author: Zhuyuhan 
- * @Date: 2020-07-22 11:39:30 
- * @Last Modified by:   Zhuyuhan 
- * @Last Modified time: 2020-07-22 11:39:30 
+ * @Author: zouwenye&amp;zhuyuhan 
+ * @Date: 2020-07-24 17:31:46 
+ * @Last Modified by: zouwenye&zhuyuhan
+ * @Last Modified time: 2020-07-24 17:33:52
  */
+
 import axios from 'axios';
 /**
  * 发送验证码，参数为电话号码

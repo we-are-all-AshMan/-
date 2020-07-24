@@ -1,3 +1,9 @@
+/*
+ * @Author: zouwenye 
+ * @Date: 2020-07-24 17:05:07 
+ * @Last Modified by:   zouwenye 
+ * @Last Modified time: 2020-07-24 17:05:07 
+ */
 <template>
   <!-- create table identities(
 openId char(100) primary key,微信授权ID

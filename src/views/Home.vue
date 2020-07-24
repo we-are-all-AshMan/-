@@ -1,3 +1,10 @@
+/*
+ * @Author: zouwenye&amp;zhuyuhan 
+ * @Date: 2020-07-24 17:33:41 
+ * @Last Modified by:   zouwenye&amp;zhuyuhan 
+ * @Last Modified time: 2020-07-24 17:33:41 
+ */
+
 <template>
     <div style="height=100%">
          <Banner />
